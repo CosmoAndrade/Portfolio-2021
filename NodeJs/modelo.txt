@@ -1,0 +1,29 @@
+https://github.com/paulosalvatore/ocean-backend-17-08-2021
+
+https://miro.com/app/board/o9J_l1ibKcI=/
+
+https://expressjs.com/pt-br/guide/routing.html
+
+- npm init -y
+
+- Crie um arquivo index.js -> console.log('Hello  World')
+
+- node index.js
+
+- npm install express
+
+- Modelo Teste
+ const app = express()
+ 
+app.get('/', function (req, res) {
+  res.send('Hello World Node Js')
+})
+ 
+app.listen(3000)
+
+http://localhost:3000
+
+
+- node index.js 
+- npm run dev
+
