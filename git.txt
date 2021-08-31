@@ -1,0 +1,9 @@
+git init 
+git add .
+
+git commit -m 'telas de login'
+
+git remote add origin https://github.com/CosmoAndrade/Projetos-diversos
+
+
+git push -u origin main
