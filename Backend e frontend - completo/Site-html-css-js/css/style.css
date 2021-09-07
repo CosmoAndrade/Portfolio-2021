@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+html,body {
+    height: 100%;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    background-color: #0c0f16;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    background-color: #121721;
+    border-bottom: 1px solid #1b202a;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+
+}
+
+.navbar .logo a {
+    color: #547ec7;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.navbar .menu li a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.menu-btn {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 947px){
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        background-color: #121721;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+
+
+    }
+
+    .navbar .menu.active{
+        left:0;
+
+    }
+    .navbar .menu li{
+
+        display: block;
+
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 13px 0;
+        font-size: 25px;
+    }
+
+    .max-width {
+        max-width: 930px;
+    }
+        
+    
+}
+
+/* ! Até aqui meu toggle navbar
+ */
+
+
+ section {
+     padding: 50px 0;
+ }
+
+ @media (max-width: 690px) {
+        section {
+            padding: 20px 0;
+        }
+ }
+
+ .top {
+     color: white;
+     display: flex;
+     background: url(../images/top.jpeg) no-repeat center;
+     height: 100vh;
+     min-height:500px;
+     background-attachment: fixed; 
+     background-size: cover;
+
+     
+ }
+
+ .top  .max-width {
+     width: 100%;
+     display: flex;
+
+ }
+
+ .top .top-content .text-1{
+     font-size: 25px;
+    
+ }
+
+ .top .top-content .text-2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-left: -3px;
+   
+}
+
+.top .top-content .text-3{
+    font-size: 32px;
+    margin: 5px 0;
+   
+   
+}
+ 
+.top .top-content a {
+    display: inline-block;
+    background-color: #b02ab7;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 300;
+    border-radius: 6px;
+    border: 2px solid #b02ab7;
+    transition: all 0.3s ease;
+
+}
+.top .top-content a:hover{
+    color: #b02ab7;
+    background: none;
+}
+
+.services{
+    color: white;
+    background-color: #0c0f16;
+    
+}
+
+.services .title {
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background-color: #1b202a;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+   
+
+}
+
+.services .serv-content .card:hover{
+    background-color: #b02ab7;
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: #b02ab7;
+    transition: all 0.3s ease;
+
+}
+
+.services .serv-content .card:hover i{
+    color: white;
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+@media (max-width: 947px){
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+
+        
+    }
+}
+
+@media (max-width: 690px){
+    .services .serv-content .card {
+        width: 100%;
+        
+
+        
+    }
+}
+
+
+.contact {
+    color: white;
+    background-color: #151921;
+    padding-bottom: 100px;
+}
+
+.contact .title {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 35px;
+
+}
+
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.contact .contact-content .colum{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .left p {
+
+    text-align: justify;
+
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: #b02ab7;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title{
+    color: #f6f6f6;
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form  .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form  .textarea textarea:focus{
+    border-color: #b02ab7;
+}
+
+.contact .right form  .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+
+
+
+.contact .right form .button-area{
+    display: flex;
+    align-items: center;
+
+}
+
+.right form .button-area button{
+    color: white;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    border: 2px solid #b02ab7;
+    background-color: #b02ab7;
+    transition: all 0.3s ease;
+}
+
+.right form .button-area button:hover{
+    color: #b02ab7;
+    background: none;
+}
+
+
+@media (max-width:947px){
+    .contact .contact-content .colum{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 500px){
+    .contact .title {
+        margin-top: 10px;
+    }
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+}
+
+
+
+footer {
+    background-color: #121721;
+    padding: 25px 23px;
+    margin-top: auto;
+    color: white;
+    text-align: center;
+
+}
+
+footer span a {
+    color: #547ec7;
+}
+
+footer span a:hover{
+
+    color: gold;
+
+}
