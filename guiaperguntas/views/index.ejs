@@ -1,0 +1,38 @@
+<%- include ('partials/header.ejs')%>
+<body>
+    <%- include ('partials/navbar.ejs')%>
+    
+    <div class="container">
+        <hr>
+        <h1>  Perguntas</h1>
+        <hr>
+        <a  class="btn btn-primary"  href="/perguntar">Perguntar</a>
+        <hr>
+      
+        <% perguntas.forEach(pergunta => {%>
+
+            <div class="card mt-5">
+               
+                <div class="card-body">
+                    <h3> 
+                        <%= pergunta.titulo %>
+                    </h3>
+
+                </div>
+                <div class="card-footer">
+                   <button class="btn btn-primary">Responder</button>
+
+                </div>
+            </div>
+
+           
+       <% })%>
+    </div>
+
+
+
+
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
